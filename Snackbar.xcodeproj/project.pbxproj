@@ -281,8 +281,8 @@
 		191E8A661CD09D8D005985CD /* PulseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				191E8A671CD09D99005985CD /* PulseViewController.xib */,
 				191E8A691CD09DA7005985CD /* PulseViewController.swift */,
+				191E8A671CD09D99005985CD /* PulseViewController.xib */,
 			);
 			path = PulseViewController;
 			sourceTree = "<group>";

@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class NearbyScanViewController: UIViewController{
+class NearbyScanViewController: UIViewController
+{
     
     // MARK: - View Outlets
     
@@ -19,8 +20,11 @@ class NearbyScanViewController: UIViewController{
     
     // MARK: - Variables
     
+    var bleManager: BleManager?
+    
     // MARK: - Constants
     
+    private let controllerTitle = "Nearby Devices"
     private let defaultCellHeight: CGFloat = 63.0
     
     //  Cell Identifiers
@@ -37,11 +41,21 @@ class NearbyScanViewController: UIViewController{
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     // UI related methods
     
     func setupView()
     {
-        // Hide the overlay view
+        // Title
+        self.title = controllerTitle
+        
+        // Setting back button to no text
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
         setupTableView()
         startScanForDevices()
     }
@@ -71,6 +85,7 @@ class NearbyScanViewController: UIViewController{
     
     func startScanForDevices()
     {
+        bleManager = BleManager()
         overlayViewVisibility(true)
     }
     
@@ -91,6 +106,17 @@ class NearbyScanViewController: UIViewController{
     }
     
 
+}
+
+// MARK: - BleManager delegate 
+
+extension NearbyScanViewController: BleManagerDelegate
+{
+    func didDiscoverDevice(deviceName:String?)
+    {
+        print("\(deviceName)")
+        stopScanForDevices()
+    }
 }
 
 // MARK: - Tableview delegate and datasource

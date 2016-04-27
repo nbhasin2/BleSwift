@@ -9,11 +9,21 @@
 import Foundation
 import CoreBluetooth
 
+/// Protocol of `ImageDownloader`.
+@objc public protocol BleManagerDelegate
+{
+    optional func didDiscoverDevice(deviceName:String?)
+}
+
 class BleManager : NSObject, CBCentralManagerDelegate
 {
     // MARK: - Variables
     
     var centralManager: CBCentralManager?
+    
+    // Delegate
+    
+    var bleManagerDelegate: BleManagerDelegate?
     
     // MARK: - Initiazers
     
@@ -25,6 +35,13 @@ class BleManager : NSObject, CBCentralManagerDelegate
     func initBleManager()
     {
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
+    
+    // MARK: - Helpers
+    
+    func stopScan()
+    {
+        self.centralManager?.stopScan()
     }
     
     // MARK: - CBCentralManagerDelegate
@@ -51,5 +68,7 @@ class BleManager : NSObject, CBCentralManagerDelegate
     
     func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
         print(peripheral.name)
+        
+        bleManagerDelegate?.didDiscoverDevice?(peripheral.name)
     }
 }
