@@ -15,8 +15,19 @@
 		191E89F71CCD9B39005985CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191E89F51CCD9B39005985CD /* Info.plist */; };
 		191E89FA1CCD9B84005985CD /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E89F91CCD9B84005985CD /* SharedConstants.swift */; };
 		191E89FF1CCD9BEF005985CD /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E89FE1CCD9BEF005985CD /* BleManager.swift */; };
-		191E8A071CCDD328005985CD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A051CCDD328005985CD /* ScanViewController.swift */; };
-		191E8A081CCDD328005985CD /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A061CCDD328005985CD /* ScanViewController.xib */; };
+		191E8A0F1CCE8A65005985CD /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A0C1CCE8A65005985CD /* ConnectViewController.xib */; };
+		191E8A101CCE8A65005985CD /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A0D1CCE8A65005985CD /* ConnectViewController.swift */; };
+		191E8A131CCE8BD9005985CD /* NearbyScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A121CCE8BD9005985CD /* NearbyScanViewController.swift */; };
+		191E8A151CCE8CD8005985CD /* NearbyScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A141CCE8CD8005985CD /* NearbyScanViewController.xib */; };
+		191E8A181CCE8D59005985CD /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A171CCE8D59005985CD /* OverlayView.xib */; };
+		191E8A1A1CCE8DC8005985CD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A191CCE8DC8005985CD /* OverlayView.swift */; };
+		191E8A1C1CCE8FA8005985CD /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A1B1CCE8FA8005985CD /* NibLoadingView.swift */; };
+		191E8A1F1CCEC75F005985CD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A1E1CCEC75F005985CD /* UIViewExtension.swift */; };
+		191E8A5D1CD02E7F005985CD /* NearByScanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A5C1CD02E7F005985CD /* NearByScanViewCell.swift */; };
+		191E8A5F1CD02EED005985CD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A5E1CD02EED005985CD /* UIColorExtension.swift */; };
+		191E8A611CD02F46005985CD /* NearByScanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A601CD02F46005985CD /* NearByScanViewCell.xib */; };
+		191E8A681CD09D99005985CD /* PulseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A671CD09D99005985CD /* PulseViewController.xib */; };
+		191E8A6A1CD09DA7005985CD /* PulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A691CD09DA7005985CD /* PulseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +61,20 @@
 		191E89F51CCD9B39005985CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191E89F91CCD9B84005985CD /* SharedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
 		191E89FE1CCD9BEF005985CD /* BleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
-		191E8A051CCDD328005985CD /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
-		191E8A061CCDD328005985CD /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		191E8A0C1CCE8A65005985CD /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
+		191E8A0D1CCE8A65005985CD /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		191E8A121CCE8BD9005985CD /* NearbyScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyScanViewController.swift; sourceTree = "<group>"; };
+		191E8A141CCE8CD8005985CD /* NearbyScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyScanViewController.xib; sourceTree = "<group>"; };
+		191E8A171CCE8D59005985CD /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		191E8A191CCE8DC8005985CD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		191E8A1B1CCE8FA8005985CD /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		191E8A1E1CCEC75F005985CD /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		191E8A221CCEC9A7005985CD /* Snackbar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Snackbar.entitlements; sourceTree = "<group>"; };
+		191E8A5C1CD02E7F005985CD /* NearByScanViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByScanViewCell.swift; sourceTree = "<group>"; };
+		191E8A5E1CD02EED005985CD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		191E8A601CD02F46005985CD /* NearByScanViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByScanViewCell.xib; sourceTree = "<group>"; };
+		191E8A671CD09D99005985CD /* PulseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PulseViewController.xib; sourceTree = "<group>"; };
+		191E8A691CD09DA7005985CD /* PulseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +133,7 @@
 		191E89AF1CCD900E005985CD /* Snackbar */ = {
 			isa = PBXGroup;
 			children = (
+				191E8A221CCEC9A7005985CD /* Snackbar.entitlements */,
 				191E89F41CCD9B39005985CD /* AppDelegate.swift */,
 				191E89F51CCD9B39005985CD /* Info.plist */,
 				191E89B71CCD900E005985CD /* Assets.xcassets */,
@@ -147,6 +171,8 @@
 		191E89E81CCD96EC005985CD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				191E8A1E1CCEC75F005985CD /* UIViewExtension.swift */,
+				191E8A5E1CD02EED005985CD /* UIColorExtension.swift */,
 			);
 			name = Extension;
 			path = Snackbar/Extension;
@@ -181,7 +207,9 @@
 		191E89EC1CCD96EC005985CD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				191E8A001CCDD284005985CD /* ScanViewController */,
+				191E8A661CD09D8D005985CD /* PulseViewController */,
+				191E8A111CCE8BC4005985CD /* NearbyScanViewController */,
+				191E8A0B1CCE8A65005985CD /* ConnectViewController */,
 			);
 			name = ViewControllers;
 			path = Snackbar/ViewControllers;
@@ -190,6 +218,9 @@
 		191E89F11CCD99C7005985CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				191E8A231CCECFF0005985CD /* NearbyScanCell */,
+				191E8A161CCE8D4C005985CD /* OverlayView */,
+				191E8A1B1CCE8FA8005985CD /* NibLoadingView.swift */,
 			);
 			name = Views;
 			path = Snackbar/Views;
@@ -211,13 +242,49 @@
 			path = Snackbar/Manager;
 			sourceTree = "<group>";
 		};
-		191E8A001CCDD284005985CD /* ScanViewController */ = {
+		191E8A0B1CCE8A65005985CD /* ConnectViewController */ = {
 			isa = PBXGroup;
 			children = (
-				191E8A051CCDD328005985CD /* ScanViewController.swift */,
-				191E8A061CCDD328005985CD /* ScanViewController.xib */,
+				191E8A0C1CCE8A65005985CD /* ConnectViewController.xib */,
+				191E8A0D1CCE8A65005985CD /* ConnectViewController.swift */,
 			);
-			path = ScanViewController;
+			path = ConnectViewController;
+			sourceTree = "<group>";
+		};
+		191E8A111CCE8BC4005985CD /* NearbyScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A121CCE8BD9005985CD /* NearbyScanViewController.swift */,
+				191E8A141CCE8CD8005985CD /* NearbyScanViewController.xib */,
+			);
+			path = NearbyScanViewController;
+			sourceTree = "<group>";
+		};
+		191E8A161CCE8D4C005985CD /* OverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A171CCE8D59005985CD /* OverlayView.xib */,
+				191E8A191CCE8DC8005985CD /* OverlayView.swift */,
+			);
+			path = OverlayView;
+			sourceTree = "<group>";
+		};
+		191E8A231CCECFF0005985CD /* NearbyScanCell */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A5C1CD02E7F005985CD /* NearByScanViewCell.swift */,
+				191E8A601CD02F46005985CD /* NearByScanViewCell.xib */,
+			);
+			path = NearbyScanCell;
+			sourceTree = "<group>";
+		};
+		191E8A661CD09D8D005985CD /* PulseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A671CD09D99005985CD /* PulseViewController.xib */,
+				191E8A691CD09DA7005985CD /* PulseViewController.swift */,
+			);
+			path = PulseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +356,14 @@
 					191E89AC1CCD900E005985CD = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = UR4UKG5R68;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					191E89C01CCD900F005985CD = {
 						CreatedOnToolsVersion = 7.3;
@@ -327,10 +402,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191E8A681CD09D99005985CD /* PulseViewController.xib in Resources */,
+				191E8A0F1CCE8A65005985CD /* ConnectViewController.xib in Resources */,
+				191E8A181CCE8D59005985CD /* OverlayView.xib in Resources */,
 				191E89F71CCD9B39005985CD /* Info.plist in Resources */,
+				191E8A151CCE8CD8005985CD /* NearbyScanViewController.xib in Resources */,
 				191E89BB1CCD900E005985CD /* LaunchScreen.storyboard in Resources */,
 				191E89B81CCD900E005985CD /* Assets.xcassets in Resources */,
-				191E8A081CCDD328005985CD /* ScanViewController.xib in Resources */,
+				191E8A611CD02F46005985CD /* NearByScanViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,9 +435,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				191E89F61CCD9B39005985CD /* AppDelegate.swift in Sources */,
+				191E8A5D1CD02E7F005985CD /* NearByScanViewCell.swift in Sources */,
 				191E89FF1CCD9BEF005985CD /* BleManager.swift in Sources */,
+				191E8A131CCE8BD9005985CD /* NearbyScanViewController.swift in Sources */,
+				191E8A1C1CCE8FA8005985CD /* NibLoadingView.swift in Sources */,
+				191E8A1A1CCE8DC8005985CD /* OverlayView.swift in Sources */,
 				191E89FA1CCD9B84005985CD /* SharedConstants.swift in Sources */,
-				191E8A071CCDD328005985CD /* ScanViewController.swift in Sources */,
+				191E8A6A1CD09DA7005985CD /* PulseViewController.swift in Sources */,
+				191E8A5F1CD02EED005985CD /* UIColorExtension.swift in Sources */,
+				191E8A1F1CCEC75F005985CD /* UIViewExtension.swift in Sources */,
+				191E8A101CCE8A65005985CD /* ConnectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

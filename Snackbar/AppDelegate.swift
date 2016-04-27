@@ -48,9 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupNavController()
     {
         
-        let initialViewController = ScanViewController(nibName: "ScanViewController", bundle: nil)
+        let nearbyScanViewController =  PulseViewController(nibName: "PulseViewController", bundle: nil)//NearbyScanViewController(nibName: "NearbyScanViewController", bundle: nil)
         
-        self.navController = UINavigationController(rootViewController: initialViewController)
+        self.navController = UINavigationController(rootViewController: nearbyScanViewController)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
