@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191E8A8F1CD10F5A005985CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A6D1CD10F5A005985CD /* AppDelegate.swift */; };
+		191E8A901CD10F5A005985CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A6E1CD10F5A005985CD /* Assets.xcassets */; };
+		191E8A911CD10F5A005985CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A6F1CD10F5A005985CD /* LaunchScreen.storyboard */; };
+		191E8A921CD10F5A005985CD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A721CD10F5A005985CD /* UIColorExtension.swift */; };
+		191E8A931CD10F5A005985CD /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A731CD10F5A005985CD /* UIViewExtension.swift */; };
+		191E8A941CD10F5A005985CD /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A771CD10F5A005985CD /* SharedConstants.swift */; };
+		191E8A951CD10F5A005985CD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A781CD10F5A005985CD /* Info.plist */; };
+		191E8A961CD10F5A005985CD /* BleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A7A1CD10F5A005985CD /* BleManager.swift */; };
+		191E8A981CD10F5A005985CD /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A7F1CD10F5A005985CD /* ConnectViewController.swift */; };
+		191E8A991CD10F5A005985CD /* ConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A801CD10F5A005985CD /* ConnectViewController.xib */; };
+		191E8A9A1CD10F5A005985CD /* NearbyScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A821CD10F5A005985CD /* NearbyScanViewController.swift */; };
+		191E8A9B1CD10F5A005985CD /* NearbyScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A831CD10F5A005985CD /* NearbyScanViewController.xib */; };
+		191E8A9C1CD10F5A005985CD /* PulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A851CD10F5A005985CD /* PulseViewController.swift */; };
+		191E8A9D1CD10F5A005985CD /* PulseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A861CD10F5A005985CD /* PulseViewController.xib */; };
+		191E8A9E1CD10F5A005985CD /* NearByScanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A891CD10F5A005985CD /* NearByScanViewCell.swift */; };
+		191E8A9F1CD10F5A005985CD /* NearByScanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A8A1CD10F5A005985CD /* NearByScanViewCell.xib */; };
+		191E8AA01CD10F5A005985CD /* NibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A8B1CD10F5A005985CD /* NibLoadingView.swift */; };
+		191E8AA11CD10F5A005985CD /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E8A8D1CD10F5A005985CD /* OverlayView.swift */; };
+		191E8AA21CD10F5A005985CD /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 191E8A8E1CD10F5A005985CD /* OverlayView.xib */; };
+		191E8AA41CD10FB7005985CD /* BleSwift.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 191E8AA31CD10FB7005985CD /* BleSwift.entitlements */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		191E89C21CCD900F005985CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191E89A51CCD900E005985CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191E89AC1CCD900E005985CD;
+			remoteInfo = Snackbar;
+		};
+		191E89CD1CCD900F005985CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191E89A51CCD900E005985CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191E89AC1CCD900E005985CD;
+			remoteInfo = Snackbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191E89AD1CCD900E005985CD /* BleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E89C11CCD900F005985CD /* BleSwift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleSwift.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E89CC1CCD900F005985CD /* BleSwift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleSwift.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E8A6D1CD10F5A005985CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191E8A6E1CD10F5A005985CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191E8A701CD10F5A005985CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191E8A721CD10F5A005985CD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		191E8A731CD10F5A005985CD /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		191E8A771CD10F5A005985CD /* SharedConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		191E8A781CD10F5A005985CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191E8A7A1CD10F5A005985CD /* BleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleManager.swift; sourceTree = "<group>"; };
+		191E8A7F1CD10F5A005985CD /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		191E8A801CD10F5A005985CD /* ConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectViewController.xib; sourceTree = "<group>"; };
+		191E8A821CD10F5A005985CD /* NearbyScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyScanViewController.swift; sourceTree = "<group>"; };
+		191E8A831CD10F5A005985CD /* NearbyScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyScanViewController.xib; sourceTree = "<group>"; };
+		191E8A851CD10F5A005985CD /* PulseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseViewController.swift; sourceTree = "<group>"; };
+		191E8A861CD10F5A005985CD /* PulseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PulseViewController.xib; sourceTree = "<group>"; };
+		191E8A891CD10F5A005985CD /* NearByScanViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByScanViewCell.swift; sourceTree = "<group>"; };
+		191E8A8A1CD10F5A005985CD /* NearByScanViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByScanViewCell.xib; sourceTree = "<group>"; };
+		191E8A8B1CD10F5A005985CD /* NibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadingView.swift; sourceTree = "<group>"; };
+		191E8A8D1CD10F5A005985CD /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		191E8A8E1CD10F5A005985CD /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		191E8AA31CD10FB7005985CD /* BleSwift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BleSwift.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191E89AA1CCD900E005985CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89BE1CCD900F005985CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89C91CCD900F005985CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191E89A41CCD900E005985CD = {
+			isa = PBXGroup;
+			children = (
+				191E8A6B1CD10F5A005985CD /* BleSwift */,
+				191E8A6C1CD10F5A005985CD /* 3rdParty */,
+				191E8A711CD10F5A005985CD /* Extension */,
+				191E8A741CD10F5A005985CD /* Frameworks */,
+				191E8A751CD10F5A005985CD /* General */,
+				191E8A791CD10F5A005985CD /* Manager */,
+				191E8A7B1CD10F5A005985CD /* Model */,
+				191E8A7D1CD10F5A005985CD /* ViewControllers */,
+				191E8A871CD10F5A005985CD /* Views */,
+				191E89AE1CCD900E005985CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191E89AE1CCD900E005985CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191E89AD1CCD900E005985CD /* BleSwift.app */,
+				191E89C11CCD900F005985CD /* BleSwift.xctest */,
+				191E89CC1CCD900F005985CD /* BleSwift.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191E8A6B1CD10F5A005985CD /* BleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A6D1CD10F5A005985CD /* AppDelegate.swift */,
+				191E8A6E1CD10F5A005985CD /* Assets.xcassets */,
+				191E8A6F1CD10F5A005985CD /* LaunchScreen.storyboard */,
+				191E8AA31CD10FB7005985CD /* BleSwift.entitlements */,
+				191E8A781CD10F5A005985CD /* Info.plist */,
+			);
+			path = BleSwift;
+			sourceTree = "<group>";
+		};
+		191E8A6C1CD10F5A005985CD /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 3rdParty;
+			path = BleSwift/3rdParty;
+			sourceTree = "<group>";
+		};
+		191E8A711CD10F5A005985CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A721CD10F5A005985CD /* UIColorExtension.swift */,
+				191E8A731CD10F5A005985CD /* UIViewExtension.swift */,
+			);
+			name = Extension;
+			path = BleSwift/Extension;
+			sourceTree = "<group>";
+		};
+		191E8A741CD10F5A005985CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = BleSwift/Frameworks;
+			sourceTree = "<group>";
+		};
+		191E8A751CD10F5A005985CD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A761CD10F5A005985CD /* Helpers */,
+				191E8A771CD10F5A005985CD /* SharedConstants.swift */,
+			);
+			name = General;
+			path = BleSwift/General;
+			sourceTree = "<group>";
+		};
+		191E8A761CD10F5A005985CD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		191E8A791CD10F5A005985CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A7A1CD10F5A005985CD /* BleManager.swift */,
+			);
+			name = Manager;
+			path = BleSwift/Manager;
+			sourceTree = "<group>";
+		};
+		191E8A7B1CD10F5A005985CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = BleSwift/Model;
+			sourceTree = "<group>";
+		};
+		191E8A7D1CD10F5A005985CD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A7E1CD10F5A005985CD /* ConnectViewController */,
+				191E8A811CD10F5A005985CD /* NearbyScanViewController */,
+				191E8A841CD10F5A005985CD /* PulseViewController */,
+			);
+			name = ViewControllers;
+			path = BleSwift/ViewControllers;
+			sourceTree = "<group>";
+		};
+		191E8A7E1CD10F5A005985CD /* ConnectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A7F1CD10F5A005985CD /* ConnectViewController.swift */,
+				191E8A801CD10F5A005985CD /* ConnectViewController.xib */,
+			);
+			path = ConnectViewController;
+			sourceTree = "<group>";
+		};
+		191E8A811CD10F5A005985CD /* NearbyScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A821CD10F5A005985CD /* NearbyScanViewController.swift */,
+				191E8A831CD10F5A005985CD /* NearbyScanViewController.xib */,
+			);
+			path = NearbyScanViewController;
+			sourceTree = "<group>";
+		};
+		191E8A841CD10F5A005985CD /* PulseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A851CD10F5A005985CD /* PulseViewController.swift */,
+				191E8A861CD10F5A005985CD /* PulseViewController.xib */,
+			);
+			path = PulseViewController;
+			sourceTree = "<group>";
+		};
+		191E8A871CD10F5A005985CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A881CD10F5A005985CD /* NearbyScanCell */,
+				191E8A8B1CD10F5A005985CD /* NibLoadingView.swift */,
+				191E8A8C1CD10F5A005985CD /* OverlayView */,
+			);
+			name = Views;
+			path = BleSwift/Views;
+			sourceTree = "<group>";
+		};
+		191E8A881CD10F5A005985CD /* NearbyScanCell */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A891CD10F5A005985CD /* NearByScanViewCell.swift */,
+				191E8A8A1CD10F5A005985CD /* NearByScanViewCell.xib */,
+			);
+			path = NearbyScanCell;
+			sourceTree = "<group>";
+		};
+		191E8A8C1CD10F5A005985CD /* OverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				191E8A8D1CD10F5A005985CD /* OverlayView.swift */,
+				191E8A8E1CD10F5A005985CD /* OverlayView.xib */,
+			);
+			path = OverlayView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191E89AC1CCD900E005985CD /* BleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E89D51CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwift" */;
+			buildPhases = (
+				191E89A91CCD900E005985CD /* Sources */,
+				191E89AA1CCD900E005985CD /* Frameworks */,
+				191E89AB1CCD900E005985CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BleSwift;
+			productName = Snackbar;
+			productReference = 191E89AD1CCD900E005985CD /* BleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		191E89C01CCD900F005985CD /* BleSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E89D81CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwiftTests" */;
+			buildPhases = (
+				191E89BD1CCD900F005985CD /* Sources */,
+				191E89BE1CCD900F005985CD /* Frameworks */,
+				191E89BF1CCD900F005985CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191E89C31CCD900F005985CD /* PBXTargetDependency */,
+			);
+			name = BleSwiftTests;
+			productName = SnackbarTests;
+			productReference = 191E89C11CCD900F005985CD /* BleSwift.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		191E89CB1CCD900F005985CD /* BleSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E89DB1CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwiftUITests" */;
+			buildPhases = (
+				191E89C81CCD900F005985CD /* Sources */,
+				191E89C91CCD900F005985CD /* Frameworks */,
+				191E89CA1CCD900F005985CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191E89CE1CCD900F005985CD /* PBXTargetDependency */,
+			);
+			name = BleSwiftUITests;
+			productName = SnackbarUITests;
+			productReference = 191E89CC1CCD900F005985CD /* BleSwift.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191E89A51CCD900E005985CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Epicara;
+				TargetAttributes = {
+					191E89AC1CCD900E005985CD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UR4UKG5R68;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+					191E89C01CCD900F005985CD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UR4UKG5R68;
+						TestTargetID = 191E89AC1CCD900E005985CD;
+					};
+					191E89CB1CCD900F005985CD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = UR4UKG5R68;
+						TestTargetID = 191E89AC1CCD900E005985CD;
+					};
+				};
+			};
+			buildConfigurationList = 191E89A81CCD900E005985CD /* Build configuration list for PBXProject "BleSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191E89A41CCD900E005985CD;
+			productRefGroup = 191E89AE1CCD900E005985CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191E89AC1CCD900E005985CD /* BleSwift */,
+				191E89C01CCD900F005985CD /* BleSwiftTests */,
+				191E89CB1CCD900F005985CD /* BleSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191E89AB1CCD900E005985CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E8AA21CD10F5A005985CD /* OverlayView.xib in Resources */,
+				191E8A911CD10F5A005985CD /* LaunchScreen.storyboard in Resources */,
+				191E8AA41CD10FB7005985CD /* BleSwift.entitlements in Resources */,
+				191E8A9D1CD10F5A005985CD /* PulseViewController.xib in Resources */,
+				191E8A9B1CD10F5A005985CD /* NearbyScanViewController.xib in Resources */,
+				191E8A9F1CD10F5A005985CD /* NearByScanViewCell.xib in Resources */,
+				191E8A991CD10F5A005985CD /* ConnectViewController.xib in Resources */,
+				191E8A951CD10F5A005985CD /* Info.plist in Resources */,
+				191E8A901CD10F5A005985CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89BF1CCD900F005985CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89CA1CCD900F005985CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191E89A91CCD900E005985CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E8A981CD10F5A005985CD /* ConnectViewController.swift in Sources */,
+				191E8A8F1CD10F5A005985CD /* AppDelegate.swift in Sources */,
+				191E8A941CD10F5A005985CD /* SharedConstants.swift in Sources */,
+				191E8AA01CD10F5A005985CD /* NibLoadingView.swift in Sources */,
+				191E8A9A1CD10F5A005985CD /* NearbyScanViewController.swift in Sources */,
+				191E8A9C1CD10F5A005985CD /* PulseViewController.swift in Sources */,
+				191E8A931CD10F5A005985CD /* UIViewExtension.swift in Sources */,
+				191E8A921CD10F5A005985CD /* UIColorExtension.swift in Sources */,
+				191E8A9E1CD10F5A005985CD /* NearByScanViewCell.swift in Sources */,
+				191E8A961CD10F5A005985CD /* BleManager.swift in Sources */,
+				191E8AA11CD10F5A005985CD /* OverlayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89BD1CCD900F005985CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E89C81CCD900F005985CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		191E89C31CCD900F005985CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191E89AC1CCD900E005985CD /* BleSwift */;
+			targetProxy = 191E89C21CCD900F005985CD /* PBXContainerItemProxy */;
+		};
+		191E89CE1CCD900F005985CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191E89AC1CCD900E005985CD /* BleSwift */;
+			targetProxy = 191E89CD1CCD900F005985CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		191E8A6F1CD10F5A005985CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191E8A701CD10F5A005985CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191E89D31CCD900F005985CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191E89D41CCD900F005985CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191E89D61CCD900F005985CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.BleSwift;
+				PRODUCT_NAME = BleSwift;
+			};
+			name = Debug;
+		};
+		191E89D71CCD900F005985CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.BleSwift;
+				PRODUCT_NAME = BleSwift;
+			};
+			name = Release;
+		};
+		191E89D91CCD900F005985CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnackbarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.SnackbarTests;
+				PRODUCT_NAME = BleSwift;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleSwift.app/BleSwift";
+			};
+			name = Debug;
+		};
+		191E89DA1CCD900F005985CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnackbarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.SnackbarTests;
+				PRODUCT_NAME = BleSwift;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BleSwift.app/BleSwift";
+			};
+			name = Release;
+		};
+		191E89DC1CCD900F005985CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnackbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.SnackbarUITests;
+				PRODUCT_NAME = BleSwift;
+				TEST_TARGET_NAME = Snackbar;
+			};
+			name = Debug;
+		};
+		191E89DD1CCD900F005985CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnackbarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.epic.SnackbarUITests;
+				PRODUCT_NAME = BleSwift;
+				TEST_TARGET_NAME = Snackbar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191E89A81CCD900E005985CD /* Build configuration list for PBXProject "BleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E89D31CCD900F005985CD /* Debug */,
+				191E89D41CCD900F005985CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191E89D51CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E89D61CCD900F005985CD /* Debug */,
+				191E89D71CCD900F005985CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191E89D81CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E89D91CCD900F005985CD /* Debug */,
+				191E89DA1CCD900F005985CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191E89DB1CCD900F005985CD /* Build configuration list for PBXNativeTarget "BleSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E89DC1CCD900F005985CD /* Debug */,
+				191E89DD1CCD900F005985CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191E89A51CCD900E005985CD /* Project object */;
+}
